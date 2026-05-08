@@ -66,6 +66,13 @@ export function Hero() {
         >
           {t("hero.gta")}
         </a>
+         <a
+          href="tel:+306978625195"
+          className="mt-12 inline-flex items-center gap-3 text-ivory border border-ivory/40 px-8 py-3 text-sm uppercase tracking-[0.25em] hover:bg-ivory hover:text-charcoal transition-all opacity-0"
+          style={{ animation: "fadeUp 1.2s ease-out 0.9s forwards" }}
+        >
+          {t("hero.mta")}
+        </a>
 
         <a
           href="#experience"

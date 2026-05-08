@@ -88,7 +88,7 @@ const amenityIcons: { key: string; el: string; en: string; svg: React.ReactNode 
   { key: "wifi", el: "Wi-Fi", en: "High-Speed WiFi", svg: <><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0" /><circle cx="12" cy="20" r="1" /></> },
   { key: "ac", el: "Κλιματισμός", en: "Air Conditioning", svg: <><circle cx="12" cy="12" r="3" /><path d="M12 3v6M12 15v6M3 12h6M15 12h6M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4" /></> },
   { key: "house", el: "Καθαριότητα", en: "Daily Housekeeping", svg: <><path d="M9 3v6l-4 6v6h14v-6l-4-6V3" /></> },
-  { key: "concierge", el: "Concierge", en: "Concierge", svg: <><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 4-7 8-7s8 3 8 7" /></> },
+
 ];
 
 export function Amenities() {

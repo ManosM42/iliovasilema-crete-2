@@ -25,6 +25,11 @@ import nobusIMG from "@/assets/nobus.jpg";
 import moureloIMG from "@/assets/mourelo.jpg";
 import magazakiIMG from "@/assets/magazaki.jpg";
 import kosmasIMG from "@/assets/taverna-kosmas.jpg";
+import kaparounakisIMG from "@/assets/kaparounakis.jpg";
+import agarathosIMG from "@/assets/agarathos.jpg";
+import koykoyvagiaIMG from "@/assets/koukouvagia.jpg";
+import KnossosIMG from "@/assets/knossos.jpg";
+import interior13IMG from "@/assets/interior-13.jpg";
 
 
 
@@ -69,6 +74,7 @@ export const galleryImages = [
   interior10IMG, 
   interior11IMG, 
   interior12IMG, 
+  interior13IMG
 ];
 
 export const beaches: Place[] = [
@@ -166,6 +172,21 @@ export const attractions: Place[] = [
     },
   },
   {
+    slug: "knossos",
+    name: "Knossos Palace",
+    category: "attractions",
+    distance: "15 km",
+    coords: [35.29804709820045, 25.162813180594277],
+    image: KnossosIMG,
+    hours: { el: "08:00 – 20:00 καθημερινά", en: "08:00 – 20:00 daily" },
+    best: { el: "Νωρίς το πρωί για ησυχία", en: "Early morning to avoid groups" },
+    tip: { el: "Βγάλτε όμορφεσ φωτογραφίες με τα παγώνια.", en: "Take beautiful photos with the peacocks" },
+    desc: {
+      el: "Ένα από τα σημαντικότερα μουσεία του κόσμου για τον Μινωικό πολιτισμό. Από τοιχογραφίες της Κνωσού μέχρι τον αινιγματικό Δίσκο της Φαιστού — τέσσερις χιλιάδες χρόνια ιστορίας σε μία επίσκεψη.",
+      en: "One of the world's great museums of Minoan civilization. From the frescoes of Knossos to the enigmatic Phaistos Disc — four thousand years of history in a single visit.",
+    },
+  },
+  {
     slug: "koules-fortress",
     name: "Venetian Fortress Rocca a Mare",
     category: "attractions",
@@ -225,6 +246,36 @@ export const attractions: Place[] = [
       en: "One of Greece's largest Orthodox cathedrals. Imposing outside, warm and gilded within — with frescoes that quietly take your breath away.",
     },
   },
+  {
+    slug: "Monastery of Agarathos",
+    name: "Monastery of Agarathos",
+    category: "attractions",
+    distance: "0.9 km",
+    coords: [35.22736075982262, 25.24978204725831],
+    image: agarathosIMG, 
+    hours: { el: "07:00 – 19:00", en: "07:00 – 19:00" },
+    best: { el: "Πρωινές ώρες με το φως μέσα από τα βιτρώ", en: "Mornings, when light pours through the windows" },
+    tip: { el: "Ντυθείτε σεμνά — ενεργός ναός.", en: "Dress modestly — an active church." },
+    desc: {
+      el: "Ένα από τα πιο αναπτυγμένα μοναστήρια της Κρήτης. Μια πλήρης αίσθηση της παράδοσης και της πνευματικής ζωής.",
+      en: "One of Crete's most developed monasteries. A complete sense of tradition and spiritual life.",
+    },
+  },
+  {
+    slug: "ceramics workshop Kaparounakis",
+    name: "Ceramics Workshop Kaparounakis",
+    category: "attractions",
+    distance: "3.5 km",
+    coords: [35.30913913938239, 25.26421600839498],
+    image: kaparounakisIMG,
+    hours: { el: "09:00 – 15:00 | κυριακες κλειστά", en: "09:00 – 15:00 | sundays closed" },
+    best: { el: "Πρωινες ώρες για μεγαλύτερη απόλαυση της θέας", en: "Morning hours for a better view" },
+    tip: { el: "Μπορείτε να αγοράσετε προϊόντα από το εργαστήριο.", en: "You can purchase products directly from the workshop." },
+    desc: {
+      el: "Ενα από τα πιο γνωστά εργαστήρια κεραμικών στην Κρήτη.",
+      en: "One of Crete's most known ceramic workshops.",
+    },
+  },
 ];
 
 export const restaurants: Place[] = [
@@ -236,12 +287,12 @@ export const restaurants: Place[] = [
     coords: [35.33940749215004, 25.135020569669027],
     image: nobusIMG,
     rating: "4.8★",
-    hours: { el: "13:00 – 00:30", en: "13:00 – 00:30" },
+    hours: { el: "9:30 – 03:00", en: "09:30 – 03:00" },
     best: { el: "Δείπνο στην εσωτερική αυλή", en: "Dinner in the courtyard" },
     tip: { el: "Παραγγείλτε από τη πιο εκλεκτή κουζίνα του ηρακλείου", en: "Order from the finest cuisine in Heraklion" },
     desc: {
-      el: "Από τα πιο αγαπημένα τραπέζια του Ηρακλείου, το Nobus υπηρετεί κρητική κουζίνα από βιολογικές φάρμες της Κρήτης. Η αυλή με το πέτρινο κτίριο δημιουργεί μια ατμόσφαιρα που θυμίζει σπιτικό — αλλά με γαστρονομική φιλοδοξία.",
-      en: "One of Heraklion's most-loved tables, Nobus serves Cretan cuisine sourced from the island's organic farms. The stone-walled courtyard feels homey — but the cooking is genuinely ambitious.",
+      el: "Από τα πιο αγαπημένα τραπέζια του Ηρακλείου, το Nobus υπηρετεί παγκόσμια κουζίνα από βιολογικές φάρμες της Κρήτης με γαστρονομική φιλοδοξία.",
+      en: "One of Heraklion's most-loved tables, Nobus serves ethnic cuisine sourced from the island's organic farms but the cooking is genuinely ambitious.",
     },
   },
   {
@@ -268,8 +319,8 @@ export const restaurants: Place[] = [
     coords: [35.26974413503253, 25.24109121019958],
     image: kosmasIMG,
     rating: "4.9★",
-    hours: { el: "18:00 – 01:00", en: "18:00 – 01:00" },
-    best: { el: "Πριν ή μετά από βόλτα στο λιμάνι", en: "Before or after a harbor walk" },
+    hours: { el: "13:00 – 22:30 | Δευτέρες Κλειστά", en: "13:00 – 22:30 | Mondays Closed" },
+    best: { el: "Πριν ή μετά από βόλτα στο χωρίο της Επισκοπής στις βυζαντινές εκκλησίες", en: "Before or after a walk in the Episkopi neighborhood, visiting the Byzantine churches" },
     tip: { el: "Κάντε κράτηση — μικρός χώρος, πάντα γεμάτος.", en: "Book ahead — small room, always full." },
     desc: {
       el: "Σύγχρονη κρητική κουζίνα σε κομψό περιβάλλον λίγα μέτρα από το λιμάνι. Δημιουργικά πιάτα, εξαιρετική λίστα κρασιών και μια απίστευτη προσοχή στη λεπτομέρεια.",
@@ -288,8 +339,24 @@ export const restaurants: Place[] = [
     best: { el: "Νωρίς το βράδυ για cocktail", en: "Early evening for cocktails" },
     tip: { el: "Δοκιμάστε το cocktail με μαστίχα Χίου.", en: "Try the Chios mastiha cocktail." },
     desc: {
-      el: "Μικρό και κομψό μπιστρό με μεσογειακή ψυχή. Σπιτική κουζίνα με δημιουργική ματιά, και cocktails που έχουν τη δική τους φήμη στην πόλη.",
-      en: "A small, elegant bistro with a Mediterranean soul. Home-style cooking with a creative twist, and cocktails that have their own following in town.",
+      el: "Μικρό και κομψό μπιστρό με μεσογειακή ψυχή. Σπιτική κουζίνα με δημιουργική ματιά, και πιάτα που έχουν τη δική τους φήμη στην πόλη.",
+      en: "A small, elegant bistro with a Mediterranean soul. Home-style cooking with a creative twist, and dishes that have their own following in town.",
+    },
+  },
+   {
+    slug: "Koukouvagia | Cretan Cuisine",
+    name: "Koukouvagia | Cretan Cuisine",
+    category: "restaurants",
+    distance: "13 km",
+    coords: [35.303320131712205, 25.23156741456921],
+    image: koykoyvagiaIMG,
+    rating: "4.7★",
+    hours: { el: "12:00 – 00:00", en: "12:00 – 00:30" },
+    best: { el: "Μεσημέρι για απογευματινή βόλτα στην παλία πόλη του Ηρακλείου", en: "Midday for an afternoon walk in the old town of Heraklion" },
+    tip: { el: "", en: "" },
+    desc: {
+      el: "Οι καλύτερες γεύσεις της κρητικής κουζίνας στο πιάτο σας. Σπιτική κουζίνα με δημιουργική ματιά, και πιάτα που έχουν τη δική τους φήμη στην πόλη.",
+      en: "The best flavors of Cretan cuisine on your plate. Home-style cooking with a creative twist, and dishes that have their own following in town.",
     },
   },
 ];
