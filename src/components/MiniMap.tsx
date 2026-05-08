@@ -4,9 +4,9 @@ interface Props {
   className?: string;
 }
 
-export function MiniMap({ center, markerLabel, className }: Props) {
-  const query = encodeURIComponent(markerLabel ?? `${center[0]},${center[1]}`);
-  const src = `https://maps.google.com/maps?q=${query}&output=embed`;
+export function MiniMap({ center, className }: Props) {
+  const [lat, lng] = center;
+  const src = `https://maps.google.com/maps?q=${lat},${lng}&z=17&output=embed`;
 
   return (
     <iframe
