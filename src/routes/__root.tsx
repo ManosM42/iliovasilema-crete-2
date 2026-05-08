@@ -1,17 +1,10 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import {
-  Outlet,
-  createRootRouteWithContext,
-  useRouter,
-  HeadContent,
-  Scripts,
-  Link,
-} from "@tanstack/react-router";
-
-import appCss from "../styles.css?url";
+import { Outlet, createRootRoute, Link, useRouter } from "@tanstack/react-router";
 import { LanguageProvider } from "@/lib/i18n";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+
+const queryClient = new QueryClient();
 
 function NotFoundComponent() {
   return (
@@ -33,45 +26,24 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
       <div>
         <h1 className="font-display text-3xl text-charcoal">Κάτι πήγε στραβά</h1>
         <p className="mt-2 text-charcoal/60 text-sm">{error.message}</p>
-        <button onClick={() => { router.invalidate(); reset(); }} className="mt-6 px-6 py-2 bg-sand text-charcoal">Try again</button>
+        <button
+          onClick={() => { router.invalidate(); reset(); }}
+          className="mt-6 px-6 py-2 bg-sand text-charcoal"
+        >
+          Try again
+        </button>
       </div>
     </div>
   );
 }
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Iliovasilema · Luxury Apartment in Heraklion, Crete" },
-      { name: "description", content: "Πολυτελές διαμέρισμα στο Ηράκλειο της Κρήτης με θέα στο Αιγαίο. Luxury apartment in Heraklion, Crete with panoramic Aegean views." },
-      { property: "og:title", content: "Iliovasilema · Luxury Apartment in Heraklion" },
-      { property: "og:description", content: "Where the sun meets the sea — boutique luxury in the heart of Heraklion, Crete." },
-      { property: "og:type", content: "website" },
-    ],
-    links: [{ rel: "stylesheet", href: appCss }],
-  }),
-  shellComponent: RootShell,
+export const Route = createRootRoute({
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
 
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="el">
-      <head><HeadContent /></head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
-
 function RootComponent() {
-  const { queryClient } = Route.useRouteContext();
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>

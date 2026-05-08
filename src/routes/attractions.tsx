@@ -20,7 +20,7 @@ function AttractionsPage() {
       subtitle={lang === "el"
         ? "Μουσεία, κάστρα και βυζαντινοί ναοί στα βήματα του Iliovasilema."
         : "Museums, fortresses and Byzantine churches just steps from Iliovasilema."}
-      banner="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&w=1800&q=80"
+      banner="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/6a/08/fb/crete.jpg?w=900&h=500&s=1"
       items={attractions}
       hoverClass="hover-shimmer"
     />

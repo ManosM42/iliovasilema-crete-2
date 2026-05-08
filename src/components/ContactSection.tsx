@@ -38,7 +38,7 @@ export function ContactSection() {
           <p className="mt-3 text-charcoal/60">{t("contact.subtitle")}</p>
 
           <div className="mt-8 overflow-hidden border border-border">
-            <MiniMap center={[35.3419, 25.1341]} zoom={14} markerLabel="Iliovasilema" className="w-full h-[420px]" />
+            <MiniMap center={[35.28686659750034, 25.232219986506912]}   markerLabel="Iliovasilema" className="w-full h-[420px]" />
           </div>
         </motion.div>
 

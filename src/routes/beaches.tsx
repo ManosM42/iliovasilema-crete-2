@@ -20,7 +20,7 @@ function BeachesPage() {
       subtitle={lang === "el"
         ? "Από οργανωμένες ακτές μέχρι κρυφούς όρμους — η Κρήτη που θα θυμάστε."
         : "From organized shores to hidden coves — the Crete you'll remember."}
-      banner="https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=1800&q=80"
+      banner="https://dynamic-media.tacdn.com/media/photo-o/2f/e5/9d/63/caption.jpg?f=webp&w=1000&h=700"
       items={beaches}
       hoverClass="hover-wave"
     />

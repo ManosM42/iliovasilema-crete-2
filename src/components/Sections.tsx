@@ -127,8 +127,8 @@ export function Amenities() {
 export function Discover() {
   const { t } = useLanguage();
   const cards = [
-    { to: "/beaches" as const, label: t("card.beaches"), icon: "", img: "https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=1200&q=80" },
-    { to: "/attractions" as const, label: t("card.attractions"), icon: "", img: "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&w=1200&q=80" },
+    { to: "/beaches" as const, label: t("card.beaches"), icon: "", img: "https://dynamic-media.tacdn.com/media/photo-o/2f/e5/9d/63/caption.jpg?f=webp&w=1000&h=700" },
+    { to: "/attractions" as const, label: t("card.attractions"), icon: "", img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/6a/08/fb/crete.jpg?w=900&h=500&s=1" },
     { to: "/restaurants" as const, label: t("card.restaurants"), icon: "", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" },
   ];
   return (
