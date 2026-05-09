@@ -31,7 +31,10 @@ import koykoyvagiaIMG from "@/assets/koukouvagia.jpg";
 import KnossosIMG from "@/assets/knossos.jpg";
 import interior13IMG from "@/assets/interior-13.jpg";
 import watercityIMG from "@/assets/watercity.jpg";
-
+import palmIMG from "@/assets/palm.jpg";
+import bittersIMG from "@/assets/bitters.jpg";
+import heavensIMG from "@/assets/heaven.jpg";
+import newsIMG from "@/assets/news.jpg";
 
 
 
@@ -378,6 +381,70 @@ export const entertainment: Place[] = [
       en: "The largest water park in Crete, with pools, water slides, and activities for the whole family. Ideal for a day of fun away from the sea.",
     },
   },
+  {
+    slug: "Palm Beach Club Hersonissos",
+    name: "Palm Beach Club Hersonissos",
+    category: "entertainment",
+    distance: "24 km",
+    coords: [35.3171840418862, 25.39293378158318],
+    image: palmIMG,
+    rating: "4.8★",
+    hours: { el: "Ανοιχτό όλο το 24ωρο", en: "Open 24 hours" },
+    best: { el: "Από τις καλύτερες beach club εμπειρίες", en: "From the best beach club experiences" },
+    tip: { el: "", en: "" },
+    desc: {
+      el: "Εστιατόριο Day n Night beach club! Το Palm Beach Club είναι το ιδανικό μέρος στη Χερσόνησο της Κρήτης. Με μια μοναδική τοποθεσία ακριβώς πάνω στην παραλία, προσφέρει μια αξέχαστη εμπειρία για όσους αναζητούν χαλάρωση και διασκέδαση. Είτε θέλετε να απολαύσετε μια δροσιστική βουτιά στα κρυστάλλινα νερά, να απολαύσετε υπέροχα κοκτέιλ ενώ απολαμβάνετε τον ήλιο, είτε να χορέψετε όλη τη νύχτα στους ρυθμούς φημισμένων DJs, το Palm Beach Club τα έχει όλα. Η ζωντανή ατμόσφαιρα του κλαμπ, σε συνδυασμό με το εκπληκτικό παραθαλάσσιο σκηνικό του, το καθιστούν έναν προορισμό που πρέπει οπωσδήποτε να επισκεφτούν τόσο οι ντόπιοι όσο και οι τουρίστες που θέλουν να δημιουργήσουν αξέχαστες αναμνήσεις στη Χερσόνησο.",
+      en: "Day n Night beach club Restaurant! Palm Beach Club is the place to be in Hersonissos Crete. With a unique location right on the beach, it offers an unforgettable experience for those seeking relaxation and fun. Whether you want to enjoy a refreshing swim in the crystal-clear waters, sip on delicious cocktails while soaking up the sun, or dance the night away to the beats of renowned DJs, Palm Beach Club has it all. The club's vibrant atmosphere, combined with its stunning seaside setting, makes it a must-visit destination for both locals and tourists looking to create lasting memories in Hersonissos.",
+    },
+},
+{
+    slug: "The Bitters Bar",
+    name: "The Bitters Bar",
+    category: "entertainment",
+    distance: "15 km",
+    coords: [35.338978181444325, 25.13277489646578],
+    image: bittersIMG,
+    rating: "4.7★",
+    hours: { el: "19:30 – 02:30", en: "19:30 – 02:30" },
+    best: { el: "Από τις καλύτερες beach club εμπειρίες", en: "From the best beach club experiences" },
+    tip: { el: "", en: "" },
+    desc: {
+      el: "Το Bitters Bar είναι ένα κρυμμένο διαμάντι στο Ηράκλειο, προσφέροντας έναν μοναδικό συνδυασμό χειροποίητων κοκτέιλ και ζεστής ατμόσφαιρας. Γνωστό για το καινοτόμο μενού ποτών και το φιλικό προσωπικό, είναι το τέλειο μέρος για μια βραδιά με φίλους ή ένα ρομαντικό βράδυ. Είτε είστε λάτρης των κοκτέιλ είτε απλά ψάχνετε για ένα υπέροχο μέρος να χαλαρώσετε, το The Bitters Bar προσφέρει μια αξέχαστη εμπειρία σε κάθε επίσκεψη.",
+      en: "The Bitters Bar is a hidden gem in Heraklion, offering a unique blend of craft cocktails and a cozy atmosphere. Known for its innovative drink menu and friendly staff, it's the perfect spot for a night out with friends or a romantic evening. Whether you're a cocktail connoisseur or just looking for a great place to unwind, The Bitters Bar delivers an unforgettable experience with every visit.",
+    },
+},
+{
+    slug: "Heaven beach Ammoudara",
+    name: "Heaven beach Ammoudara",
+    category: "entertainment",
+    distance: "22 km",
+    coords: [35.33836548092151, 25.068012956176446],
+    image: heavensIMG,
+    rating: "4.4★",
+    hours: { el: "09:00 – 01:00", en: "09:00 – 01:00" },
+    best: { el: "Από τις καλύτερες beach club εμπειρίες", en: "From the best beach club experiences" },
+    tip: { el: "", en: "" },
+    desc: {
+      el: "Το Heaven Beach στην Αμμουδάρα είναι ένας δημοφιλής προορισμός για όσους αναζητούν μια ολοκληρωμένη εμπειρία παραλίας και διασκέδασης. Με μια υπέροχη τοποθεσία ακριβώς πάνω στην παραλία, το Heaven Beach προσφέρει μια μοναδική συνδυαστική εμπειρία χαλάρωσης και διασκέδασης. Είτε θέλετε να απολαύσετε μια δροσιστική βουτιά στα κρυστάλλινα νερά, να απολαύσετε υπέροχα κοκτέιλ ενώ απολαμβάνετε τον ήλιο, είτε να χορέψετε όλη τη νύχτα στους ρυθμούς φημισμένων DJs, το Heaven Beach τα έχει όλα. Η ζωντανή ατμόσφαιρα του κλαμπ, σε συνδυασμό με το εκπληκτικό παραθαλάσσιο σκηνικό του, το καθιστούν έναν προορισμό που πρέπει οπωσδήποτε να επισκεφτούν τόσο οι ντόπιοι όσο και οι τουρίστες που θέλουν να δημιουργήσουν αξέχαστες αναμνήσεις στην Αμμουδάρα.",
+      en: "The Heaven Beach in Ammoudara is a popular destination for those seeking a complete beach and entertainment experience. With a stunning location right on the beach, Heaven Beach offers a unique combination of relaxation and fun. Whether you want to take a refreshing dip in the crystal-clear waters, enjoy amazing cocktails while basking in the sun, or dance the night away to the beats of renowned DJs, Heaven Beach has it all. The vibrant atmosphere of the club, combined with the breathtaking coastal scenery, makes it a must-visit destination for both locals and tourists who want to create unforgettable memories in Ammoudara.",
+    },
+},
+{
+    slug: "News seaside bar restaurant",
+    name: "News Seaside Bar Restaurant",
+    category: "entertainment",
+    distance: "6 km",
+    coords: [35.331904219546175, 25.207350815156605],
+    image: newsIMG,
+    rating: "4.3★",
+    hours: { el: "08:00 – 23:30", en: "08:00 – 23:30" },
+    best: { el: "Από τις καλύτερες beach club εμπειρίες", en: "From the best beach club experiences" },
+    tip: { el: "", en: "" },
+    desc: {
+      el: "Το News Seaside Bar στον Καρτερό είναι ένα από τα καλύτερα θαλασσινά διαμάντια του Ηρακλείου όσο αφορά το Restaurant and Bar experience. Πάνω στα καταγάλανα νερά του καρτερού μόλις 3 χιλιόμετρα από την πόλη βρίσκετε αυτός ο μαγικός προορισμός χαλάρωσης.",
+      en: "News Seaside Bar in Karteros is one of the best seaside gems of Heraklion in terms of Restaurant and Bar experience. On the crystal blue waters of Karteros, just 3 kilometers from the city, you will find this magical relaxation destination.",
+    },
+},
 ];
 export const allByCategory = { beaches, attractions, restaurants, entertainment };
 
