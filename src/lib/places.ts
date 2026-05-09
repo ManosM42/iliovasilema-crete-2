@@ -369,7 +369,7 @@ export const entertainment: Place[] = [
     slug: "Water City Anopolis",
     name: "Water City Anopolis",
     category: "entertainment",
-    distance: "13 km",
+    distance: "4 km",
     coords: [35.31058784380861, 25.251511003276654],
     image: watercityIMG,
     rating: "4.8★",
