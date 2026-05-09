@@ -6,7 +6,7 @@ import { MiniMap } from "@/components/MiniMap";
 
 export const Route = createFileRoute("/$category/$slug")({
   beforeLoad: ({ params }) => {
-    const cats: Category[] = ["beaches", "attractions", "restaurants"];
+    const cats: Category[] = ["beaches", "attractions", "restaurants", "entertainment"];
     if (!cats.includes(params.category as Category)) throw notFound();
     if (!findPlace(params.category as Category, params.slug)) throw notFound();
   },
@@ -31,8 +31,18 @@ function PlaceDetail() {
   const place = findPlace(category as Category, slug)!;
   const { lang, t } = useLanguage();
 
-  const backKey = category === "beaches" ? "back.beaches" : category === "attractions" ? "back.attractions" : "back.restaurants";
-  const badgeKey = category === "beaches" ? "badge.beach" : category === "attractions" ? "badge.attraction" : "badge.restaurant";
+  const backKey =
+    category === "beaches" ? "back.beaches"
+    : category === "attractions" ? "back.attractions"
+    : category === "entertainment" ? "back.entertainment"
+    : "back.restaurants";
+
+  const badgeKey =
+    category === "beaches" ? "badge.beach"
+    : category === "attractions" ? "badge.attraction"
+    : category === "entertainment" ? "badge.entertainment"
+    : "badge.restaurant";
+
   const backTo = `/${category}` as "/beaches";
 
   return (

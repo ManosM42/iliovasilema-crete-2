@@ -130,6 +130,7 @@ export function Discover() {
     { to: "/beaches" as const, label: t("card.beaches"), icon: "", img: "https://dynamic-media.tacdn.com/media/photo-o/2f/e5/9d/63/caption.jpg?f=webp&w=1000&h=700" },
     { to: "/attractions" as const, label: t("card.attractions"), icon: "", img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/6a/08/fb/crete.jpg?w=900&h=500&s=1" },
     { to: "/restaurants" as const, label: t("card.restaurants"), icon: "", img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" },
+    { to: "/entertainment" as const, label: t("card.entertainment"), icon: "", img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/4f/64/6d/let-s-get-wet-at-watercity.jpg?w=900&h=500&s=1" },
   ];
   return (
     <section className="bg-ivory py-24 md:py-32">

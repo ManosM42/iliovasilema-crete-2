@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as RestaurantsRouteImport } from './routes/restaurants'
+import { Route as EntertainmentRouteImport } from './routes/entertainment'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BeachesRouteImport } from './routes/beaches'
 import { Route as AttractionsRouteImport } from './routes/attractions'
@@ -20,6 +21,11 @@ import { Route as CategorySlugRouteImport } from './routes/$category.$slug'
 const RestaurantsRoute = RestaurantsRouteImport.update({
   id: '/restaurants',
   path: '/restaurants',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EntertainmentRoute = EntertainmentRouteImport.update({
+  id: '/entertainment',
+  path: '/entertainment',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/attractions': typeof AttractionsRoute
   '/beaches': typeof BeachesRoute
   '/contact': typeof ContactRoute
+  '/entertainment': typeof EntertainmentRoute
   '/restaurants': typeof RestaurantsRoute
   '/$category/$slug': typeof CategorySlugRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/attractions': typeof AttractionsRoute
   '/beaches': typeof BeachesRoute
   '/contact': typeof ContactRoute
+  '/entertainment': typeof EntertainmentRoute
   '/restaurants': typeof RestaurantsRoute
   '/$category/$slug': typeof CategorySlugRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/attractions': typeof AttractionsRoute
   '/beaches': typeof BeachesRoute
   '/contact': typeof ContactRoute
+  '/entertainment': typeof EntertainmentRoute
   '/restaurants': typeof RestaurantsRoute
   '/$category/$slug': typeof CategorySlugRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/attractions'
     | '/beaches'
     | '/contact'
+    | '/entertainment'
     | '/restaurants'
     | '/$category/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/attractions'
     | '/beaches'
     | '/contact'
+    | '/entertainment'
     | '/restaurants'
     | '/$category/$slug'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/attractions'
     | '/beaches'
     | '/contact'
+    | '/entertainment'
     | '/restaurants'
     | '/$category/$slug'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   AttractionsRoute: typeof AttractionsRoute
   BeachesRoute: typeof BeachesRoute
   ContactRoute: typeof ContactRoute
+  EntertainmentRoute: typeof EntertainmentRoute
   RestaurantsRoute: typeof RestaurantsRoute
   CategorySlugRoute: typeof CategorySlugRoute
 }
@@ -128,6 +141,13 @@ declare module '@tanstack/react-router' {
       path: '/restaurants'
       fullPath: '/restaurants'
       preLoaderRoute: typeof RestaurantsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/entertainment': {
+      id: '/entertainment'
+      path: '/entertainment'
+      fullPath: '/entertainment'
+      preLoaderRoute: typeof EntertainmentRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   AttractionsRoute: AttractionsRoute,
   BeachesRoute: BeachesRoute,
   ContactRoute: ContactRoute,
+  EntertainmentRoute: EntertainmentRoute,
   RestaurantsRoute: RestaurantsRoute,
   CategorySlugRoute: CategorySlugRoute,
 }

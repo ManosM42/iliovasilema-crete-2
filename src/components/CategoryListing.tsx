@@ -9,12 +9,18 @@ interface Props {
   subtitle: string;
   banner: string;
   items: Place[];
-  hoverClass: string; // hover-wave / hover-shimmer / hover-candle
+  hoverClass: string;
 }
 
 export function CategoryListing({ category, title, subtitle, banner, items, hoverClass }: Props) {
   const { lang, t } = useLanguage();
-  const badgeKey = category === "beaches" ? "badge.beach" : category === "attractions" ? "badge.attraction" : "badge.restaurant";
+
+  const badgeKey =
+    category === "beaches" ? "badge.beach"
+    : category === "attractions" ? "badge.attraction"
+    : category === "entertainment" ? "badge.entertainment"
+    : "badge.restaurant";
+
 
   return (
     <>

@@ -1,4 +1,4 @@
-export type Category = "beaches" | "attractions" | "restaurants";
+export type Category = "beaches" | "attractions" | "restaurants" | "entertainment";
 import interiorIMG from "@/assets/interior-1.jpg";
 import interior2IMG from "@/assets/interior-2.jpg";
 import interior3IMG from "@/assets/interior-3.jpg";
@@ -30,6 +30,7 @@ import agarathosIMG from "@/assets/agarathos.jpg";
 import koykoyvagiaIMG from "@/assets/koukouvagia.jpg";
 import KnossosIMG from "@/assets/knossos.jpg";
 import interior13IMG from "@/assets/interior-13.jpg";
+import watercityIMG from "@/assets/watercity.jpg";
 
 
 
@@ -359,9 +360,26 @@ export const restaurants: Place[] = [
       en: "The best flavors of Cretan cuisine on your plate. Home-style cooking with a creative twist, and dishes that have their own following in town.",
     },
   },
+  ];
+export const entertainment: Place[] = [
+  {
+    slug: "Water City Anopolis",
+    name: "Water City Anopolis",
+    category: "entertainment",
+    distance: "13 km",
+    coords: [35.31058784380861, 25.251511003276654],
+    image: watercityIMG,
+    rating: "4.8★",
+    hours: { el: "10:00 – 18:00", en: "10:00 – 18:00" },
+    best: { el: "Καθήστε στη πισίνα κυμάτων για να απολαύσετε τα τεχνητα κύματα", en: "Sit by the wave pool to enjoy the artificial waves" },
+    tip: { el: "Παραγγείλτε τη φρέσκια πίτσα του ιταλικού εντός του πάρκου", en: "Order the fresh pizza from the Italian inside the park" },
+    desc: {
+      el: "Το μεγαλύτερο υδάτινο πάρκο της Κρήτης, με πισίνες, νεροτσουλήθρες και δραστηριότητες για όλη την οικογένεια. Ιδανικό για μια μέρα διασκέδασης μακριά από τη θάλασσα.",
+      en: "The largest water park in Crete, with pools, water slides, and activities for the whole family. Ideal for a day of fun away from the sea.",
+    },
+  },
 ];
-
-export const allByCategory = { beaches, attractions, restaurants };
+export const allByCategory = { beaches, attractions, restaurants, entertainment };
 
 export function findPlace(category: Category, slug: string) {
   return allByCategory[category].find((p) => p.slug === slug);
